@@ -1,7 +1,12 @@
 aid: commercial-metals
-url: https://raw.githubusercontent.com/api-evangelist/commercial-metals/refs/heads/main/apis.yml
+url: 
+  https://raw.githubusercontent.com/api-evangelist/commercial-metals/refs/heads/main/apis.yml
 modified: '2026-03-21'
 apis: []
 common:
   - type: Website
     url: https://www.commercial-metals.com
+description: >-
+  Commercial Metals Company is a global manufacturer, recycler, and marketer of steel
+  and metal products, related materials, and services serving construction, energy,
+  manufacturing, and other industries.
