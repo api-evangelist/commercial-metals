@@ -27,6 +27,8 @@ description: >-
   than via a self-service developer program.
 apis: []
 common:
+  - type: DomainSecurity
+    url: security/commercial-metals-domain-security.yml
   - type: LinkedIn
     url: https://www.linkedin.com/company/commercial-metals-company
   - type: Website
