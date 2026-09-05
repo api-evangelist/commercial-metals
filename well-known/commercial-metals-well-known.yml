@@ -1,0 +1,246 @@
+generated: '2026-09-05'
+method: probed
+source: live GET of the named /.well-known/ path list on every host in apis.yml plus api.cmc.com and mycmc.cmc.com
+summary:
+  hosts_probed: 7
+  documents_served: 0
+  note: "No /.well-known/ discovery document is served on any Commercial Metals host. Recorded as evidence of absence\
+    \ \u2014 no WellKnown or SecurityTxt pointer is emitted, because none of these paths returned a real document."
+hosts:
+- host: https://www.cmc.com
+  documents:
+  - path: /.well-known/security.txt
+    status: 404
+  - path: /.well-known/openid-configuration
+    status: 404
+  - path: /.well-known/oauth-authorization-server
+    status: 404
+  - path: /.well-known/oauth-protected-resource
+    status: 404
+  - path: /.well-known/api-catalog
+    status: 404
+  - path: /.well-known/ai-plugin.json
+    status: 404
+  - path: /.well-known/apis.json
+    status: 404
+  - path: /apis.json
+    status: 404
+  - path: /apis.yml
+    status: 404
+  - path: /.well-known/aauth-resource.json
+    status: 404
+  - path: /.well-known/ucp.json
+    status: 404
+  - path: /.well-known/acp.json
+    status: 404
+  hit_count: 0
+  negative_control:
+    path: /.well-known/commercial-metals-negative-control-7f3ab91c.json
+    status: 404
+    result: passed
+- host: https://cmc.com
+  documents:
+  - path: /.well-known/security.txt
+    status: 404
+  - path: /.well-known/openid-configuration
+    status: 404
+  - path: /.well-known/oauth-authorization-server
+    status: 404
+  - path: /.well-known/oauth-protected-resource
+    status: 404
+  - path: /.well-known/api-catalog
+    status: 404
+  - path: /.well-known/ai-plugin.json
+    status: 404
+  - path: /.well-known/apis.json
+    status: 404
+  - path: /apis.json
+    status: 404
+  - path: /apis.yml
+    status: 404
+  - path: /.well-known/aauth-resource.json
+    status: 404
+  - path: /.well-known/ucp.json
+    status: 404
+  - path: /.well-known/acp.json
+    status: 404
+  hit_count: 0
+  negative_control:
+    path: /.well-known/commercial-metals-negative-control-7f3ab91c.json
+    status: 404
+    result: passed
+- host: https://mycmc.cmc.com
+  documents:
+  - path: /.well-known/security.txt
+    status: 403
+  - path: /.well-known/openid-configuration
+    status: 403
+  - path: /.well-known/oauth-authorization-server
+    status: 403
+  - path: /.well-known/oauth-protected-resource
+    status: 403
+  - path: /.well-known/api-catalog
+    status: 403
+  - path: /.well-known/ai-plugin.json
+    status: 403
+  - path: /.well-known/apis.json
+    status: 403
+  - path: /apis.json
+    status: 403
+  - path: /apis.yml
+    status: 403
+  - path: /.well-known/aauth-resource.json
+    status: 403
+  - path: /.well-known/ucp.json
+    status: 403
+  - path: /.well-known/acp.json
+    status: 403
+  hit_count: 0
+  negative_control:
+    path: /.well-known/commercial-metals-negative-control-7f3ab91c.json
+    status: 403
+    result: passed
+  note: mycmc.cmc.com is the myCMC customer portal, fronted by a Cloudflare interstitial that answers HTTP 403 'Just
+    a moment...' to every unauthenticated request. Not readable by probe; the portal itself is customer-login gated.
+- host: https://api.cmc.com
+  documents:
+  - path: /.well-known/security.txt
+    status: 200
+    note: "2xx returned an HTML page, not a document \u2014 recorded as a miss"
+  - path: /.well-known/openid-configuration
+    status: 200
+    note: "2xx returned an HTML page, not a document \u2014 recorded as a miss"
+  - path: /.well-known/oauth-authorization-server
+    status: 200
+    note: "2xx returned an HTML page, not a document \u2014 recorded as a miss"
+  - path: /.well-known/oauth-protected-resource
+    status: 200
+    note: "2xx returned an HTML page, not a document \u2014 recorded as a miss"
+  - path: /.well-known/api-catalog
+    status: 200
+    note: "2xx returned an HTML page, not a document \u2014 recorded as a miss"
+  - path: /.well-known/ai-plugin.json
+    status: 200
+    note: "2xx returned an HTML page, not a document \u2014 recorded as a miss"
+  - path: /.well-known/apis.json
+    status: 200
+    note: "2xx returned an HTML page, not a document \u2014 recorded as a miss"
+  - path: /apis.json
+    status: 200
+    note: "2xx returned an HTML page, not a document \u2014 recorded as a miss"
+  - path: /apis.yml
+    status: 200
+    note: "2xx returned an HTML page, not a document \u2014 recorded as a miss"
+  - path: /.well-known/aauth-resource.json
+    status: 200
+    note: "2xx returned an HTML page, not a document \u2014 recorded as a miss"
+  - path: /.well-known/ucp.json
+    status: 200
+    note: "2xx returned an HTML page, not a document \u2014 recorded as a miss"
+  - path: /.well-known/acp.json
+    status: 200
+    note: "2xx returned an HTML page, not a document \u2014 recorded as a miss"
+  hit_count: 0
+  negative_control:
+    path: /.well-known/commercial-metals-negative-control-7f3ab91c.json
+    status: 200
+    result: "failed \u2014 host answers 2xx for a path that cannot exist"
+  note: "api.cmc.com resolves and answers HTTP 200 with an identical 56-byte empty HTML document (<html><head><title></title></head><body></body></html>)\
+    \ for EVERY path, including a random negative-control path. It is a catch-all placeholder, not an API surface\
+    \ \u2014 every 200 here is a soft hit and none is recorded as a document."
+  soft_404_control:
+    bytes: 56
+    identical_for_all_paths: true
+- host: https://cmcrecycling.com
+  documents:
+  - path: /.well-known/security.txt
+    status: 404
+  - path: /.well-known/openid-configuration
+    status: 404
+  - path: /.well-known/oauth-authorization-server
+    status: 404
+  - path: /.well-known/oauth-protected-resource
+    status: 404
+  - path: /.well-known/api-catalog
+    status: 404
+  - path: /.well-known/ai-plugin.json
+    status: 404
+  - path: /.well-known/apis.json
+    status: 404
+  - path: /apis.json
+    status: 404
+  - path: /apis.yml
+    status: 404
+  - path: /.well-known/aauth-resource.json
+    status: 404
+  - path: /.well-known/ucp.json
+    status: 404
+  - path: /.well-known/acp.json
+    status: 404
+  hit_count: 0
+  negative_control:
+    path: /.well-known/commercial-metals-negative-control-7f3ab91c.json
+    status: 404
+    result: passed
+- host: https://ir.cmc.com
+  documents:
+  - path: /.well-known/security.txt
+    status: 404
+  - path: /.well-known/openid-configuration
+    status: 404
+  - path: /.well-known/oauth-authorization-server
+    status: 404
+  - path: /.well-known/oauth-protected-resource
+    status: 404
+  - path: /.well-known/api-catalog
+    status: 404
+  - path: /.well-known/ai-plugin.json
+    status: 404
+  - path: /.well-known/apis.json
+    status: 404
+  - path: /apis.json
+    status: 404
+  - path: /apis.yml
+    status: 404
+  - path: /.well-known/aauth-resource.json
+    status: 404
+  - path: /.well-known/ucp.json
+    status: 404
+  - path: /.well-known/acp.json
+    status: 404
+  hit_count: 0
+  negative_control:
+    path: /.well-known/commercial-metals-negative-control-7f3ab91c.json
+    status: 404
+    result: passed
+- host: https://esg.cmc.com
+  documents:
+  - path: /.well-known/security.txt
+    status: 404
+  - path: /.well-known/openid-configuration
+    status: 404
+  - path: /.well-known/oauth-authorization-server
+    status: 404
+  - path: /.well-known/oauth-protected-resource
+    status: 404
+  - path: /.well-known/api-catalog
+    status: 404
+  - path: /.well-known/ai-plugin.json
+    status: 404
+  - path: /.well-known/apis.json
+    status: 404
+  - path: /apis.json
+    status: 404
+  - path: /apis.yml
+    status: 404
+  - path: /.well-known/aauth-resource.json
+    status: 404
+  - path: /.well-known/ucp.json
+    status: 404
+  - path: /.well-known/acp.json
+    status: 404
+  hit_count: 0
+  negative_control:
+    path: /.well-known/commercial-metals-negative-control-7f3ab91c.json
+    status: 404
+    result: passed

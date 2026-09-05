@@ -1,0 +1,22 @@
+generated: '2026-09-05'
+method: searched
+source: https://www.cmc.com/en-us/mycmc/ecommerce
+plan_count: 0
+plans: []
+note: >-
+  Commercial Metals Company publishes no plans, tiers, or pricing for programmatic access. There is no
+  developer program to price: the myCMC customer portal and the Systems Integration program (EDI, API,
+  CSV, XML, flat file) are extended to existing CMC customers and suppliers through a sales
+  relationship, and CMC's own eCommerce page directs prospects to a sales representative or
+  ecommerce@cmc.com rather than to a signup or pricing page. Steel and metal product pricing itself is
+  quote-based and negotiated per customer; nothing about it is published as machine-readable plan data.
+evidence:
+  - url: https://www.cmc.com/en-us/mycmc/ecommerce
+    status: 200
+    finding: eCommerce/Systems Integration overview — no pricing, no tiers, contact-driven onboarding
+  - url: https://www.cmc.com/en-us/mycmc/request-access
+    status: 200
+    finding: myCMC access is requested via a form, not purchased
+  - url: https://www.cmc.com/getmedia/360ad30f-e318-468f-8792-6c78013aff52/CMC-myCMC_Systems-Integration.pdf
+    status: 200
+    finding: Systems Integration one-pager names no price, plan, or quota

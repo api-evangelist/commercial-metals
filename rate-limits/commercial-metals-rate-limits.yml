@@ -1,0 +1,25 @@
+generated: '2026-09-05'
+method: searched
+source: https://www.cmc.com/en-us/mycmc/ecommerce
+limit_count: 0
+rate_limits: []
+headers: []
+note: >-
+  No published rate limits. Commercial Metals Company serves no public API and no developer
+  documentation, so there is no documented limit, window, burst, quota, exhaustion status code, or
+  RateLimit-* / Retry-After response header to record. CMC's Systems Integration program names "API" as
+  one supported connection method alongside EDI, CSV, XML and flat files, but the contract, endpoint and
+  operating limits of that channel are negotiated bilaterally with CMC's eCommerce team and are not
+  public. An honest zero, measured 2026-09-05.
+evidence:
+  - url: https://www.cmc.com/en-us/mycmc/ecommerce
+    status: 200
+    finding: names EDI/API/VMI as integration channels; no technical reference, no limits
+  - url: https://api.cmc.com/
+    status: 200
+    finding: >-
+      resolves but returns an identical 56-byte empty HTML document for every path including a random
+      negative-control path — a catch-all placeholder, not a documented API host
+  - url: https://mycmc.cmc.com/
+    status: 403
+    finding: Cloudflare interstitial in front of the customer-login portal; no anonymous response headers observable

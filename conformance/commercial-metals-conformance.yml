@@ -1,0 +1,45 @@
+generated: '2026-09-05'
+method: searched
+source: https://www.cmc.com/getmedia/360ad30f-e318-468f-8792-6c78013aff52/CMC-myCMC_Systems-Integration.pdf
+summary: >-
+  Commercial Metals Company names electronic data interchange as a supported way to do business with it,
+  but publishes no contract that declares conformance to any standard. Every entry below is therefore
+  recorded as conforms:false with the reason stated — CMC's claims live in a marketing one-pager, not in
+  a machine-readable artifact, and this pipeline scores the contract rather than the prose. No entry here
+  is an assertion that CMC fails a standard in practice; it is an assertion that nothing public proves it.
+standards:
+  - id: edi-x12
+    conforms: false
+    evidence: >-
+      CMC's Systems Integration one-pager (PDF, © CMC 2024) states "Multiple technologies supported
+      including EDI, API, .CSV, XML, flat files, or custom formats" and lists Quote-To-Cash documents
+      that map onto X12 transaction sets (purchase order, PO acknowledgement, ASN shipping data,
+      electronic billing, remittance advice, customer inventory advice). No transaction-set number,
+      version, implementation guide, or partner-onboarding contract is published, so conformance to
+      ASC X12 cannot be verified from any public artifact.
+  - id: openapi
+    conforms: false
+    evidence: >-
+      No OpenAPI/Swagger document on any CMC host. Probed www.cmc.com, cmc.com, api.cmc.com,
+      mycmc.cmc.com, cmcrecycling.com, ir.cmc.com and esg.cmc.com for /openapi.json, /openapi.yaml,
+      /swagger.json, /v1/openapi.json, /swagger/v1/swagger.json, /api-docs, /docs and /redoc — all miss.
+  - id: graphql
+    conforms: false
+    evidence: /graphql on api.cmc.com and mycmc.cmc.com returns the catch-all shell / a Cloudflare 403; no introspectable endpoint.
+  - id: asyncapi
+    conforms: false
+    evidence: No event, streaming or webhook surface is documented anywhere on CMC's public site.
+  - id: oauth2
+    conforms: false
+    evidence: No /.well-known/oauth-authorization-server or /.well-known/openid-configuration on any CMC host (all 404).
+  - id: rfc9457-problem-details
+    conforms: false
+    evidence: No public contract or error reference exists to evaluate.
+  - id: rfc9116-security-txt
+    conforms: false
+    evidence: /.well-known/security.txt returns 404 on every CMC host probed 2026-09-05.
+domain_standards:
+  note: >-
+    The domain standard for this market is EDI (ASC X12 in North America, EDIFACT in Europe) for
+    steel/metals order-to-cash, and no CMC contract declares it. Recorded here so a later pass can
+    upgrade it if CMC ever publishes an implementation guide; not scored as conformance today.
