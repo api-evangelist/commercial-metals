@@ -1,7 +1,9 @@
 ---
 title: Peter Matt - Commercial Metals Company
 url: https://www.linkedin.com/in/petermatt
-date: '2026-05-25'
+published: ''
+date_basis: harvested
+harvested: '2026-05-25'
 query: '"Commercial Metals" press release artificial intelligence'
 position: 4
 source: serpapi-google

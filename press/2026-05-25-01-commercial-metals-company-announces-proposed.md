@@ -1,7 +1,9 @@
 ---
 title: Commercial Metals Company Announces Proposed ...
 url: https://www.prnewswire.com/news-releases/commercial-metals-company-announces-proposed-private-offering-of-2-000-million-senior-notes-302613037.html
-date: '2026-05-25'
+published: ''
+date_basis: harvested
+harvested: '2026-05-25'
 query: '"Commercial Metals" press release artificial intelligence'
 position: 1
 source: serpapi-google

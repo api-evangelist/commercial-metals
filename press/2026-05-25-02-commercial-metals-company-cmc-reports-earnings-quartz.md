@@ -1,7 +1,9 @@
 ---
 title: Commercial Metals Company (CMC) reports earnings - Quartz
 url: https://qz.com/commercial-metals-company-cmc-reports-earnings-1851733423
-date: '2026-05-25'
+published: ''
+date_basis: harvested
+harvested: '2026-05-25'
 query: '"Commercial Metals" press release artificial intelligence'
 position: 2
 source: serpapi-google
