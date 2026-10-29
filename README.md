@@ -1,4 +1,4 @@
-# Commercial Metals Company (commercial-metals)
+# Commercial Metals Company
 
 <!-- API-EVANGELIST-PROVENANCE:BEGIN -->
 > ### About this repository
@@ -64,48 +64,94 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-Commercial Metals Company (CMC) is a Fortune 500 manufacturer, recycler, and marketer of steel and metal products serving the construction, energy, and manufacturing industries. CMC was the first US steel company to launch an online customer portal (myCMC), but does not currently publish a public developer API portal or OpenAPI specifications. Programmatic integrations with myCMC (order management, shipping, invoicing) are typically established through direct contracts with CMC's IT organization rather than via a self-service developer program.
+Commercial Metals Company (CMC) is a Fortune 500 manufacturer, recycler, fabricator and marketer of steel and metal products — rebar, merchant and structural bar, wire rod, performance steel, construction products and ground improvement solutions — running recycling centers, mini-mills, micro-mills and fabrication plants across the United States, Europe and Asia for the construction, infrastructure, energy and manufacturing markets. CMC was an early mover on customer self-service with myCMC, a portal for inventory, pricing, online ordering, material release, document search and real-time order and delivery status, and it runs a business-to-business Systems Integration program whose own one-pager names EDI, API, CSV, XML and flat file across the Quote-To-Cash process. None of it is self-service: no developer portal, no API reference and no machine-readable contract is published on any CMC host as of September 2026 — integration is arranged through a CMC sales rep or ecommerce@cmc.com.
 
-**URL:** [Visit APIs.json URL](https://raw.githubusercontent.com/api-evangelist/commercial-metals/refs/heads/main/apis.yml)
+**Areas:** Construction · Fortune 500 · Manufacturing · Metals · Recycling · Steel
 
-## Scope
+## Commercial Metals Company on APIs.io
 
-- **Type:** Index
-- **Position:** Consumer
-- **Access:** 3rd-Party
+Everything profiled for Commercial Metals Company is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/commercial-metals/](https://apis.io/providers/commercial-metals/)** — or go straight to one of the APIs or properties below.
 
-## Tags
+### Published properties
 
-- Construction
-- Fortune 500
-- Manufacturing
-- Metals
-- Recycling
-- Steel
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
 
-## Timestamps
+#### Security (1)
 
-- **Created:** 2026-03-21
-- **Modified:** 2026-04-26
+Authentication, trust centre, and vulnerability disclosure.
 
-## APIs
+- [Commercial Metals Domain Security](https://apis.io/security/commercial-metals/commercial-metals-domain-security/)
 
-No public developer API has been documented for Commercial Metals Company. The myCMC customer portal exists for business customers but is not exposed as a self-service developer program.
+#### Plans and pricing (1)
 
-## Common Properties
+Published plans, tiers and prices.
+
+- [Commercial Metals Plans Pricing](https://apis.io/plans/commercial-metals/commercial-metals-plans-pricing/)
+
+#### Rate limits (1)
+
+Published request limits.
+
+- [Commercial Metals Rate Limits](https://apis.io/rate-limits/commercial-metals/commercial-metals-rate-limits/)
+
+## Where to find this API
+
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
 
 - [Website](https://www.cmc.com/)
-- [Customer Portal (myCMC)](https://www.cmc.com/en-us/mycmc)
-- [Portal Request Access](https://www.cmc.com/en-us/mycmc/request-access)
-- [Performance Steel](https://www.cmc.com/en-us/what-we-do/america/performance-steel)
-- [CMC Recycling](https://www.cmcrecycling.com/)
-- [Investors](https://ir.cmc.com/)
-- [Sustainability](https://esg.cmc.com/)
-- [Careers](https://www.cmc.com/en-us/careers)
-- [Contact](https://www.cmc.com/en-us/contact-us)
+- [Support](https://www.cmc.com/en-us/contact-us)
+- [Terms of service](https://cmcproduction.blob.core.windows.net/media/cmcmetals/media/pdf/cmctermsofuse.pdf)
+- [Privacy policy](https://www.cmc.com/en-us/personal-data-protection)
 
-## Maintainers
+## API Evangelist rating
 
-**FN:** Kin Lane
+**Kin Score 10.6** — minimal · rubric 0.24.0 · scored 2026-10-17
 
-**Email:** kin@apievangelist.com
+| Facet | Score |
+|---|---|
+| Discoverability | 49.1 |
+| Contract quality | 0.0 |
+| Contract governance | 0.0 |
+| Operational transparency | 0.0 |
+| Developer ergonomics | 4.8 |
+| Access clarity | 21.1 |
+
+**Agent readiness 2.5** — human-only
+
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | — |
+| Agentic Access | — |
+| Reversibility Documented | — |
+| MCP Server | — |
+| Auth Clarity | — |
+| Idempotency | — |
+| Error Semantics | — |
+| OpenAPI Examples | — |
+| Rate Limit Signal | documented (partial credit) |
+| Event Surface Described | — |
+| Agent Skills | — |
+| Well Known Catalog | — |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | — |
+| Delegated Identity | — |
+| Protected Resource Metadata | — |
+| Dynamic Client Registration | — |
+| Agentic Commerce | — |
+
+**Regulatory alignment 18.6** — Horizontal (data, software, accessibility, platform)
+
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/commercial-metals/](https://apis.io/providers/commercial-metals/).
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for Commercial Metals Company: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/commercial-metals/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
